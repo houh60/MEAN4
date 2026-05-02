@@ -1,1 +1,12 @@
-<p>post-list works!</p>
+<div>
+  <h2>MONSTER HEALTH</h2>
+  <progress id="monster-health" max="100" [value]="healValue">100%</progress>
+  <br />
+  <button
+    matButton="filled"
+    color="primary"
+    (click)="this.healValue = this.healValue >= 0 ? this.healValue - 10 : 0"
+  >
+    Attack
+  </button>
+</div>

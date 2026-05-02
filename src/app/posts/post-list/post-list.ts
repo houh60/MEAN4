@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './post-list.html',
   styleUrl: './post-list.scss',
 })
-export class PostList {}
+export class PostList {
+  healValue = 100;
+}
